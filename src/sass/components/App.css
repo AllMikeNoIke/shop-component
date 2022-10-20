@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  align-items: center;
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.shop-card {
+  background-color: white;
+  border: 1px solid whitesmoke;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 90%;
+}
+@media screen and (min-width: 576px) {
+  .shop-card {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .shop-card {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .shop-card {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .shop-card {
+    width: 30%;
+  }
+}
+
+.shop-card-section {
+  border-bottom: 1px solid whitesmoke;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.section-header {
+  display: flex;
+  color: darkslategray;
+  font-weight: 500;
+  gap: 9px;
+}
+
+.section-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.section-info.upsell {
+  justify-content: flex-start;
+}
+
+.section-option-container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.section-option-container.item-name {
+  border-left: 1px solid whitesmoke;
+  padding-left: 10px;
+}
+
+.section-option {
+  display: flex;
+  gap: 10px;
+}
+
+.section-option-info {
+  color: gray;
+  font-size: 0.75rem;
+  font-weight: 300;
+  margin-left: 26px;
+}
+.section-option-info.free-shipping {
+  color: lightcoral;
+  font-weight: 500;
+}
+
+.purchasing-section-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.purchasing-section-option-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.purchasing-section-option-title,
+.purchasing-section-option-pricing {
+  font-weight: 500;
+}
+
+.purchasing-section-option-container-pricing {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+.quantity-section-option {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.quantity-btn {
+  background-color: white;
+  border: 2px solid lightcoral;
+  border-radius: 16px;
+  color: lightcoral;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  height: 32px;
+  margin-left: 10px;
+  width: 40px;
+}
+.quantity-btn.quantity-btn-active {
+  background-color: lightcoral;
+  border: 2px solid lightgray;
+  color: white;
+  outline: none;
+}
+
+.quantity-sent-info {
+  margin-bottom: 1rem;
+}
+
+.upsell-shop-card-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.upsell-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.upsell-section-option-info {
+  color: gray;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.upsell-section-option-info-price-original {
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  -webkit-text-decoration-color: lightcoral;
+          text-decoration-color: lightcoral;
+}
+.upsell-section-option-info-price-sale {
+  color: lightcoral;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+.upsell-section-option-info-icon {
+  color: lightslategray;
+  font-size: 0.5rem;
+  margin-right: 3px;
+}
+.upsell-section-option-info-learn-more-btn {
+  background: white;
+  border: none;
+  color: lightslategray;
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+
+.add-to-cart-btn {
+  background: lightcoral;
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 5px 3px lightgray;
+  color: white;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  height: 45px;
+  padding: 0px 16px;
+  width: 300px;
+}
+.add-to-cart-btn-original-price {
+  color: pink;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+}
+.add-to-cart-btn-promotional-price {
+  font-size: 0.8rem;
+}
+
+.guarantee-statement {
+  color: gray;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: white;
+  border: 2px solid lightgray;
+  cursor: pointer;
+  height: 16px;
+  transition: background-color 500ms;
+  width: 16px;
+}
+input:checked {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M21 6.285l-11.16 12.733-6.84-6.018 1.319-1.49 5.341 4.686 9.865-11.196 1.475 1.285z'/%3E%3C/svg%3E"), lightcoral;
+}
+input[type=radio] {
+  border-radius: 50%;
+}
+input[type=checkbox] {
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+}/*# sourceMappingURL=App.css.map */

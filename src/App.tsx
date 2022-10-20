@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './App.scss'
+import './sass/components/App.css'
 
 enum ItemName {
   CAPSULE = 'FLO - PMS Vitamin Capsule',
